@@ -148,6 +148,8 @@ body {
 .down-icon {
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 300px;
 }
 
 .down-icon .iconify {
@@ -180,7 +182,7 @@ body {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 1em;
+    grid-gap: 3em;
     
     width: 100%;
 }
@@ -227,7 +229,7 @@ body {
     bottom: 3px;
 }
 
-.project-container > figure > img {
+.img-container img {
     height: 300px;
     width: 500px;
 }
@@ -280,14 +282,18 @@ body {
     }
 
     .project-container {
-        max-width: 300px;
-        max-height: 300px;
+        // max-width: 300px;
+        // max-height: 300px;
+        min-height: 310px;
     }
 
     .project-list li {
         width: 59%;
     }
-
+    .img-container img {
+        height: 230px;
+        width: 298px;
+    }
     .welcome-container {
         margin-left: 0px;
     }
