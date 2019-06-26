@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+$color-discord: #26262b;
+$color-aqua: #a1fef6;
+$color-bg-grey: #ededed;
+$color-baby-blue: #dcf0fa;
+$font-roboto: 'Roboto', sans-serif;
+
+html {
+    scroll-behavior: smooth;
+    font-family: $font-roboto;
+    width: 100%;
+    
+}
+// SVG Image background provided by SVGBackgrounds.com.
+body {
+    height: 2vmax;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(240)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%234FE'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='540' height='450' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    display: grid;
+    // grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+        "hero"
+        "main-content"
+        "footer" ;
+    grid-template-rows: 2fr 3fr 2fr;
+    // grid-auto-columns: auto;
+    justify-items: center;
+    
+}
+
+.hero {
+    grid-area: hero;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+    grid-auto-rows: minmax(300px, auto);
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 66px;
+    padding: 50px;
+    color: white;
+    text-shadow: 1px 1px  black;
+}
+
+.hero > h1 > span {
+    color: $color-discord;
+}
+
+.profile-pic {
+    background-image: url('../img/12036862_10204866336122882_7118036467122488113_n.jpg');
+    background-size: cover;
+    border: 5px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+
+    width: 200px;
+    height: 200px;
+    
+}
+// .hero > img {
+//     width: auto;
+//     height: auto;
+// }
+
+.main-content {
+    grid-area: main-content;
+    width: 100%;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 200 200'%3E%3Cpolygon fill='%23DCEFFA' points='100 0 0 100 100 100 100 200 200 100 200 0'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    // display: grid;
+    // grid-gap: 400px;
+    // grid-gap: 300px;
+    // grid-auto-rows: 125px minmax(200px, 400px);
+    // grid-gap: 2em;
+
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-discord;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.skills header {
+    display: grid;
+    align-items: center;
+}
+
+.skills h1 {
+    color: $color-aqua;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+.skill-list {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 45%;
+    grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+    // grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 10px;
+}
+
+.skill-list li {
+    width: 100%; 
+    height: 100%; 
+    text-align: center;
+}
+
+.skill-list .iconify { 
+    object-fit: cover;
+    // width: 100%;
+    // max-height: 100%;
+    width: 80%; 
+    height: 80%; 
+}
+
+.down-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.down-icon .iconify {
+    width: 150px;
+    height: 150px;
+    color: $color-discord;
+}
+
+.project-work {
+    display: grid;
+    grid-auto-rows: 125px minmax(200px, 400px);
+    justify-items: center;
+    width: 100%;
+    height: 700px;
+    background-color: $color-discord;
+}
+
+.project-work header {
+    display: grid;
+    align-items: center;
+}
+
+.project-work header h1 {
+    color: $color-baby-blue;
+    // text-shadow: 1px 1px  white;
+    font-size: 40px;
+}
+
+.project-work > ul {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+    grid-gap: 1em;
+    
+    width: 100%;
+}
+
+.project-list {
+    height: 100%;
+}
+
+.project-list li {
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: $color-bg-grey;
+    max-width: 500px;
+}
+
+.project-list p {
+    padding: 15px;
+}
+
+.project-list figure {
+    position: relative;
+}
+
+.project-list figure figcaption {
+    
+    width: 100%;
+    padding: 15px;
+    color: white;
+    font-size: 25px;
+    background-color: rgba($color: #000000, $alpha: .7);
+    position: absolute;
+    bottom: 3px;
+}
+
+.project-list > li > figure > img {
+    height: 300px;
+    width: 500px;
+}
+
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    // height: 200px;
+    width: 100%;
+    padding: 50px;
+    // background-color: $color-discord;
+}
+
+.footer p {
+    font-size: 52px;
+    line-height: 66px;
+    
+    color: $color-discord;
+    text-shadow: 1px 1px white;
+}
+
+.footer .iconify {
+    width: 150px;
+    height: 150px;
+
+}
+
+.social-links {
+    display: flex;
+}
+
