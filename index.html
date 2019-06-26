@@ -10,9 +10,12 @@
 </head>
 <body>
     <header class="hero">
-        <div class="profile-pic">
+        <div class="profile-pic-container">
+            <div class="profile-pic"></div>
         </div>
-        <h1>Hello, I'm <span>William Dunn</span>, a Software Engineer based out of New York, NY.</h1>
+        <div class="welcome-container">
+            <h1>Hello, I'm <span>William Dunn</span>, a Software Engineer based out of New York, NY.</h1>
+        </div>
     </header>
     <section class="main-content">
         <div class="skills">
@@ -40,19 +43,23 @@
             </header>
             <ul class="project-list">
                 
-                <li>
-                    <figure>
-                        <img src="https://i.imgur.com/rYCcQVl.png">
-                        <figcaption>Endeavornote</figcaption>
-                    </figure>
-                    <p>A single page clone of Evernote, built with React and Redux.</p>
+                <li id="pc-1">
+                    <div class="project-container">
+                        <figure>
+                            <img src="https://i.imgur.com/rYCcQVl.png">
+                            <figcaption>Endeavornote</figcaption>
+                        </figure>
+                        <p>A single page clone of Evernote, built with React and Redux.</p>
+                    </div>
                 </li>
                 <li>
-                    <figure>
-                        <img src="https://i.imgur.com/MLum5CJ.png">
-                        <figcaption>Two Dee Skate</figcaption>
-                    </figure>
-                    <p>A 2D side-scrolling skateboarding game built with JavaScript, HTML5 Canvas, and CSS3.</p>
+                    <div class="project-container">
+                        <figure>
+                            <img src="https://i.imgur.com/MLum5CJ.png">
+                            <figcaption>Two Dee Skate</figcaption>
+                        </figure>
+                        <p>A 2D side-scrolling skateboarding game built with JavaScript, HTML5 Canvas, and CSS3.</p>
+                    </div>
                 </li>
                 
             </ul>
