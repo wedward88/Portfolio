@@ -298,8 +298,8 @@ body {
     }
 
     .skill-list {
-        width: 28em;
-        grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
+        width: 22em;
+        grid-template-columns: repeat(auto-fit, minmax(7em, 1fr));
         grid-template-rows: 125px 125px 125px;
         grid-gap: 5px;
     }
