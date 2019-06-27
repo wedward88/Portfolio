@@ -117,7 +117,7 @@ body {
     display: grid;
     justify-items: center;
     align-items: center;
-    width: 37%;
+    width: 39em;
     grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
     grid-template-rows: 200px 200px 200px;
     grid-gap: 10px;
@@ -282,7 +282,7 @@ body {
     }
 
     .project-work {
-        height: 1000px;
+        height: 850px;
     }
 
     .project-container {
@@ -292,6 +292,18 @@ body {
     .project-list li {
         width: 59%;
     }
+
+    .down-icon {
+        min-height: 0px;
+    }
+
+    .skill-list {
+        width: 28em;
+        grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
+        grid-template-rows: 125px 125px 125px;
+        grid-gap: 5px;
+    }
+
     .img-container img {
         height: 230px;
         width: 298px;
