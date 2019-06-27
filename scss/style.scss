@@ -17,9 +17,9 @@ html {
 body {
     height: 2vmax;
     background-color: #ffffff;
-    background-image: url('../img/Subtle-Prism.svg');
+    background-image: url('../img/divbg2.svg');
     background-attachment: fixed;
-    background-size: cover;
+    // background-size: cover;
     display: grid;
     grid-template-columns: minmax(200px, 1fr);
     grid-template-areas: 
