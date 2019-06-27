@@ -262,6 +262,13 @@ body {
         padding-right: 0px;
     }
 
+    body {
+        background-attachment: initial;
+    }
+    .main-content {
+        background-attachment: initial;
+    }
+
     .project-work {
         height: 1000px;
     }
