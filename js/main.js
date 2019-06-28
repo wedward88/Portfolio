@@ -5,24 +5,41 @@ import '../scss/style.scss'
 document.addEventListener('DOMContentLoaded', ()=> {
     // let bodyHeight = $("body").height() - $(window).height();
     let prevScrollTop = 0;
+    
+    
 
     
     window.onscroll = () => {
-        // console.log($(window).scrollTop());
         let currScrollTop = $(window).scrollTop();
-        console.log(currScrollTop);
-        let winHeight = $(window).height() / 2;
+        let winHeight = $(window).height()
+        let currScrollMid = (currScrollTop + winHeight / 2)
+        let arrow = $(".down-icon .iconify");
+        console.log(currScrollMid);
+        console.log(arrow.offset().top);
+
+        // console.log($(window).scrollTop());
+       
+        // let scrollBottom = $(window).scrollTop() + $(window).height();
+        
+        
+
+        // console.log(arrow.height());
+
+        // console.log(winHeight);
+        let flipArrow = ((currScrollMid > arrow.offset().top - 10) && (currScrollMid < arrow.offset().top + 10))
         if (currScrollTop > prevScrollTop) {
-            if ($(window).scrollTop() > winHeight) {
-                $(".down-icon .iconify").css({
+            
+            if (flipArrow ) {
+                debugger
+                arrow.css({
                     "transform": "rotate(180deg)",
                     "transition": "transform 1s",
                 })
             } 
         } else {
             
-            if ($(window).scrollTop() > winHeight) {
-                $(".down-icon .iconify").css({
+        if (flipArrow) {
+                arrow.css({
                     transform: "rotate(0deg)",
                     transition: "transform 1s",
                 })
