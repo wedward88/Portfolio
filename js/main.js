@@ -14,26 +14,14 @@ document.addEventListener('DOMContentLoaded', ()=> {
         let winHeight = $(window).height()
         let currScrollMid = (currScrollTop + winHeight / 2)
         let arrow = $(".down-icon .iconify");
-        console.log(currScrollMid);
-        console.log(arrow.offset().top);
-
-        // console.log($(window).scrollTop());
-       
-        // let scrollBottom = $(window).scrollTop() + $(window).height();
         
-        
-
-        // console.log(arrow.height());
-
-        // console.log(winHeight);
         let flipArrow = ((currScrollMid > arrow.offset().top - 10) && (currScrollMid < arrow.offset().top + 10))
         if (currScrollTop > prevScrollTop) {
             
             if (flipArrow ) {
-                debugger
                 arrow.css({
                     "transform": "rotate(180deg)",
-                    "transition": "transform 1s",
+                    "transition": "transform .5s",
                 })
             } 
         } else {
@@ -41,7 +29,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
         if (flipArrow) {
                 arrow.css({
                     transform: "rotate(0deg)",
-                    transition: "transform 1s",
+                    transition: "transform .5s",
                 })
             } 
         }
