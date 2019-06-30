@@ -3,11 +3,9 @@ import '../scss/style.scss'
 
 
 document.addEventListener('DOMContentLoaded', ()=> {
-    // let bodyHeight = $("body").height() - $(window).height();
-    let prevScrollTop = 0;
-    
-    
 
+    ///////// Arrow flip animation ////////////
+    let prevScrollTop = 0;
     
     window.onscroll = () => {
         let currScrollTop = $(window).scrollTop();
@@ -35,5 +33,26 @@ document.addEventListener('DOMContentLoaded', ()=> {
         }
         prevScrollTop = currScrollTop;
     };
+
+    /////// END Arrow flip animation END ////////
+
+    ////// Project Hover //////////
+
+    let endeavCon = $('#endeav-container');
+    let endeavImg = $('#endeav-img');
+    let skateCon = $('#skate-container');
+    let skateImg = $('#skate-img');
+
+    endeavCon.hover(()=>{
+        endeavImg.attr("src", "https://media.giphy.com/media/kBqiBso7bdMDIicTbc/giphy.gif")
+    }, ()=>{
+        endeavImg.attr("src", "https://i.imgur.com/rYCcQVl.png")
+    });
+    
+    skateCon.hover(()=>{
+        skateImg.attr("src", "https://media.giphy.com/media/ibjeJHmzXjPFdJlpbW/giphy.gif") 
+    }, ()=>{
+        skateImg.attr("src", "https://i.imgur.com/MLum5CJ.png")      
+    });
 });
 
