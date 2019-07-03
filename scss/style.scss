@@ -2,6 +2,7 @@
 $color-discord: #26262b;
 $color-aqua: #a1fef6;
 $color-bg-grey: #ededed;
+$color-bg-dark-grey: #2f3036;
 $color-discord-light: #656568;
 $color-baby-blue: #39bdff;
 $font-roboto: 'Roboto', sans-serif;
@@ -194,20 +195,24 @@ body {
 .project-container {
     overflow: hidden;
     border-radius: 10px;
-    background-color: $color-bg-grey;
+    background-color: $color-bg-dark-grey;
     max-width: 700px;
     max-height: 400px;
-    transition: .25s max-height;
+    transition: .5s max-height;
 }
 
 .project-container:hover {
-    transition: .25s max-height;
-    max-height: 450px;
+    transition: .5s max-height;
+    max-height: 600px;
 }
 
 
 .project-list p {
-    padding: 15px;
+    padding: 20px;
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+    line-height: 22px;
 }
 
 .project-list figure {
@@ -215,20 +220,49 @@ body {
     
 }
 
-.project-list figure figcaption {
-    
-    width: 100%;
-    padding: 15px;
+.project-list figcaption {
     color: white;
-    font-size: 25px;
-    background-color: rgba($color: #000000, $alpha: .7);
-    position: absolute;
-    bottom: 3px;
+    font-size: 24px;
+    font-weight: lighter;
+    padding-top: 20px;
+    text-align: center;
 }
 
 .img-container img {
     height: 400px;
     width: 700px;
+}
+
+.project-link-container {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.project-link-container div {
+    display: flex;
+    justify-content: space-between;
+    width: 265px;
+}
+
+.project-link-container button {
+    width: 100px;
+    height: 25px;
+    margin: 0 10px;
+    border: 1px solid $color-discord;
+    color: $color-baby-blue;
+    font-weight: bolder;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: $color-discord;
+    outline: none;
+    transition: box-shadow .5s;
+}
+
+.project-link-container button:hover {
+    cursor: pointer;
+    transition: box-shadow .5s;
+    box-shadow: 0px 0px 8px white;
 }
 
 
@@ -298,6 +332,7 @@ body {
 
     
 }
+
 @media only screen and (max-width: 600px) {
     .profile-pic-container {
         display: flex;
@@ -315,17 +350,17 @@ body {
     }
 
     .project-work {
-        height: 850px;
-        padding-top: 50px;
+        height: 1100px;
     }
 
     .project-work header {
-        margin-top: 150px;
+        margin-top: 100px;
         padding-bottom: 50px;
     }
 
     .project-work ul {
         height: 800px;
+        grid-gap: 3em;
     }
 
     .project-container {
@@ -335,6 +370,10 @@ body {
 
     .project-list li {
         width: 85%;
+    }
+
+    .project-container:hover {
+        max-height: inherit;
     }
 
     .down-icon {
