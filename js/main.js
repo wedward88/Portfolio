@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
         
         let arrowDown = currScrollMid > arrow.offset().top
         
-        console.log(arrowDown);
+        // console.log(arrowDown);
 
         if (arrowDown) {
             arrow.css({
