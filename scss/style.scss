@@ -364,7 +364,7 @@ body {
     }
 
     .project-container {
-        min-height: 310px;
+        max-height: 425px;
         width: 100%;
     }
 
@@ -373,7 +373,7 @@ body {
     }
 
     .project-container:hover {
-        max-height: inherit;
+        max-height: 425px;
     }
 
     .down-icon {
