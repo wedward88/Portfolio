@@ -13,24 +13,22 @@ document.addEventListener('DOMContentLoaded', ()=> {
         let currScrollMid = (currScrollTop + winHeight / 2)
         let arrow = $(".down-icon .iconify");
         
-        let flipArrow = ((currScrollMid > arrow.offset().top - 10) && (currScrollMid < arrow.offset().top + 10))
-        if (currScrollTop > prevScrollTop) {
-            
-            if (flipArrow ) {
-                arrow.css({
-                    "transform": "rotate(180deg)",
-                    "transition": "transform .5s",
-                })
-            } 
+        let arrowDown = currScrollMid > arrow.offset().top
+        
+        console.log(arrowDown);
+
+        if (arrowDown) {
+            arrow.css({
+                "transform": "rotate(180deg)",
+                "transition": "transform 1s",
+            })
         } else {
-            
-        if (flipArrow) {
-                arrow.css({
-                    transform: "rotate(0deg)",
-                    transition: "transform .5s",
-                })
-            } 
+            arrow.css({
+                transform: "rotate(0deg)",
+                transition: "transform 1s",
+            })
         }
+        
         prevScrollTop = currScrollTop;
     };
 
@@ -60,19 +58,19 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
     ////////// Mobile Event Listeners /////////////////////
 
-    endeavCon.addEventListener('touchstart', () => {
+    endeavCon[0].addEventListener('touchstart', () => {
         endeavImg.attr("src", "https://media.giphy.com/media/kBqiBso7bdMDIicTbc/giphy.gif");
     });
 
-    endeavCon.addEventListener('touchend', () => {
+    endeavCon[0].addEventListener('touchend', () => {
         endeavImg.attr("src", "https://i.imgur.com/rYCcQVl.png");
     });
 
-    skateCon.addEventListener('touchstart', () => {
+    skateCon[0].addEventListener('touchstart', () => {
         skateImg.attr("src", "https://media.giphy.com/media/ibjeJHmzXjPFdJlpbW/giphy.gif")
     });
 
-    skateCon.addEventListener('touchend', () => {
+    skateCon[0].addEventListener('touchend', () => {
         skateImg.attr("src", "https://i.imgur.com/MLum5CJ.png")
     });
 
