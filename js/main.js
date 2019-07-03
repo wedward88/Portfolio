@@ -36,7 +36,8 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
     /////// END Arrow flip animation END ////////
 
-    ////// Project Hover //////////
+    ////////// START Project Hover Event Listeners START //////////////
+
 
     let endeavCon = $('#endeav-container');
     let endeavImg = $('#endeav-img');
@@ -48,11 +49,36 @@ document.addEventListener('DOMContentLoaded', ()=> {
     }, ()=>{
         endeavImg.attr("src", "https://i.imgur.com/rYCcQVl.png")
     });
-    
-    skateCon.hover(()=>{
-        skateImg.attr("src", "https://media.giphy.com/media/ibjeJHmzXjPFdJlpbW/giphy.gif") 
-    }, ()=>{
-        skateImg.attr("src", "https://i.imgur.com/MLum5CJ.png")      
+
+    skateCon.hover(() => {
+        skateImg.attr("src", "https://media.giphy.com/media/ibjeJHmzXjPFdJlpbW/giphy.gif")
+    }, () => {
+        skateImg.attr("src", "https://i.imgur.com/MLum5CJ.png")
     });
+
+    ////////// END Project Hover Event Listeners END //////////////
+
+    ////////// Mobile Event Listeners /////////////////////
+
+    endeavCon.addEventListener('touchstart', () => {
+        endeavImg.attr("src", "https://media.giphy.com/media/kBqiBso7bdMDIicTbc/giphy.gif");
+    });
+
+    endeavCon.addEventListener('touchend', () => {
+        endeavImg.attr("src", "https://i.imgur.com/rYCcQVl.png");
+    });
+
+    skateCon.addEventListener('touchstart', () => {
+        skateImg.attr("src", "https://media.giphy.com/media/ibjeJHmzXjPFdJlpbW/giphy.gif")
+    });
+
+    skateCon.addEventListener('touchend', () => {
+        skateImg.attr("src", "https://i.imgur.com/MLum5CJ.png")
+    });
+
+
+
+
+
 });
 
