@@ -57,7 +57,7 @@ body {
     text-align: center;
     box-sizing: border-box;
     padding: 40px 0px;
-    margin-left: -424px;
+    margin-left: -390px;
 }
 
 .welcome-container h1 {
@@ -142,6 +142,17 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 300px;
+    transform: rotate(0deg);
+    transition: transform 1s;
+}
+
+.flipped {
+    transform: rotate(180deg);
+    transition: transform .5s;
+}
+
+.un-flipped {
+    transition: transform .5s;
 }
 
 .down-icon .iconify {
@@ -284,6 +295,7 @@ body {
     line-height: 66px;
     color: white;
     margin-top: 150px;
+    text-align: center;
 }
 
 .footer .iconify {
@@ -311,8 +323,9 @@ body {
 
 
 @media only screen and (min-width: 601px) and (max-width: 1470px) {
+// @media only screen and (min-width: 941px) and (max-width: 1470px) {
     .welcome-container {
-        margin-left: -300px;
+        margin-left: -40%;
     }
 
     .project-work {
@@ -332,6 +345,28 @@ body {
 
     
 }
+// @media only screen and (min-width: 601px) and (max-width: 940px) {
+//     .welcome-container {
+//         margin-left: -200px;
+//     }
+
+//     .project-work {
+//         height: 100%;
+//     }
+
+//     .project-work header {
+//         margin-bottom: 25px;
+//     }
+
+//     .project-work > ul {
+//         grid-template-columns: repeat(auto-fit, minmax(49em, 1fr));
+//         grid-gap: 3em;
+//         height: 100%;
+//         margin-bottom: 50px;
+//     }
+
+    
+// }
 
 @media only screen and (max-width: 600px) {
     .profile-pic-container {
