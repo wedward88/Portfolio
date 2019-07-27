@@ -244,7 +244,7 @@ nav {
 .down-icon .iconify {
     width: 150px;
     height: 150px;
-    color: $color-baby-blue;
+    margin-bottom: 40px;
 }
 
 .project-work {
@@ -461,6 +461,10 @@ nav {
         justify-content: center;
         
     }
+
+    #about, #projects, #skills, #contact {
+        padding-top: 115px;
+    }
     .nav-links {
         display: flex;
         justify-content: space-around;
@@ -472,6 +476,7 @@ nav {
     }
     .main-content {
         background-attachment: initial;
+        margin-bottom: 100px;
     }
 
     .about {
@@ -536,8 +541,9 @@ nav {
     }
 
     .footer {
-        height: 300px;
-        justify-content: space-around;
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .footer p {
