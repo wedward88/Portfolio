@@ -11,10 +11,14 @@ document.addEventListener('DOMContentLoaded', ()=> {
         let winHeight = $(window).height()
         let currScrollMid = (currScrollTop + winHeight / 2)
         let arrow = $(".down-icon .iconify");
+        let navBar = $('#nav-bar');
+        let navLinks = $('.nav-links');
         
-        let arrowUp = currScrollMid > arrow.offset().top
-        arrow.toggleClass("flipped", arrowUp)
-
+        let scrolling = currScrollTop > 0;
+        let arrowUp = currScrollMid > arrow.offset().top;
+        arrow.toggleClass("flipped", arrowUp);
+        navBar.toggleClass("nav-show", scrolling);
+        navLinks.toggleClass("nav-link-invert", scrolling);
     };
 
     /////// END Arrow flip animation END ////////
@@ -26,6 +30,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     let endeavImg = $('#endeav-img');
     let skateCon = $('#skate-container');
     let skateImg = $('#skate-img');
+    
 
     endeavCon.hover(()=>{
         endeavImg.attr("src", "https://media.giphy.com/media/kBqiBso7bdMDIicTbc/giphy.gif")

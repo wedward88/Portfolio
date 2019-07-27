@@ -20,18 +20,42 @@
     <title>William Edward</title>
 </head>
 <body>
+    <nav id="nav-bar">
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     <header class="hero">
         <div class="profile-pic-container">
             <div class="profile-pic"></div>
         </div>
         <div class="welcome-container">
-            <h1>Hello, I'm <span><a href="https://www.linkedin.com/in/wedward88/" target="_blank" >William Dunn</a></span>, a Software Engineer based out of New York, NY.</h1>
+            <h1>Hello! I'm <span><a href="https://www.linkedin.com/in/wedward88/" target="_blank" >William Dunn</a></span>, a software engineer and problem solver based out of New York, NY.</h1>
+        </div>
+        <div class="down-icon">
+            <svg class="iconify un-flipped" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 24 24">
+                <path
+                    d="M11.29 11.46a1 1 0 0 0 1.42 0l3-3A1 1 0 1 0 14.29 7L12 9.34 9.71 7a1 1 0 1 0-1.42 1.46zm3 1.08L12 14.84l-2.29-2.3A1 1 0 0 0 8.29 14l3 3a1 1 0 0 0 1.42 0l3-3a1 1 0 0 0-1.42-1.42z"
+                    fill="#39bdff" />
+            </svg>
         </div>
     </header>
     <section class="main-content">
-        <div class="project-work">
+        <div class="about" id="about">
             <header>
-                <h1>Projects</h1>
+                <h1 class="section-head"><p>{</p><span>About Me</span><p>}</p></h1>
+                <p>With over 9 years of experience as an IT professional, I've developed the problem solving and analytical skills necessary to be an effective software engineer.</p> 
+                <p>I love to write clean, user-friendly applications to create enjoyable web experiences.</p>
+            </header>
+        </div>
+        <div class="project-work" id="projects">
+            <header>
+                <h1 class="section-head"><p>{</p><span>Projects</span><p>}</p></h1>
             </header>
             <ul class="project-list">
         
@@ -75,18 +99,9 @@
         
             </ul>
         </div>
-        <div class="down-icon">
-            <svg class="iconify un-flipped" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"
-                width="1em" height="1em"
-                preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                <path
-                    d="M11.29 11.46a1 1 0 0 0 1.42 0l3-3A1 1 0 1 0 14.29 7L12 9.34 9.71 7a1 1 0 1 0-1.42 1.46zm3 1.08L12 14.84l-2.29-2.3A1 1 0 0 0 8.29 14l3 3a1 1 0 0 0 1.42 0l3-3a1 1 0 0 0-1.42-1.42z"
-                    fill="#39bdff" />
-            </svg>
-        </div>
-        <div class="skills">
+        <div class="skills" id="skills">
             <header>
-                <h1>Skills</h1>
+                <h1 class="section-head"><p>{</p><span>Skills</span><p>}</p></h1>
             </header>
             <ul class="skill-list">
                 <li><a href="https://www.ruby-lang.org/en/" target="_blank" ><span class="iconify" data-icon="mdi:ruby" data-inline="false" style="color: white;"></span></a></li>
@@ -102,7 +117,7 @@
         </div>
         
     </section>
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <p>If you'd like to work with me, please <span><a href="mailto:williamdunn195@gmail.com" target="_blank">reach out!</a></span></p>
         <ul class="social-links">
             <a href="https://github.com/wedward88" target="_blank" ><span class="iconify" data-icon="ant-design:github-outline" data-inline="false" style="color: white;"></span></a>
