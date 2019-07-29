@@ -327,15 +327,15 @@ nav {
     text-align: center;
 }
 
-.project-list li:nth-of-type(odd) {
-    transform: translateX(-50em);
-    transition: transform 1s;
-}
+// .project-list li:nth-of-type(odd) {
+//     transform: translateX(-50em);
+//     transition: transform 1s;
+// }
 
-.project-list li:nth-of-type(even) {
-    transform: translateX(50em);
-    transition: transform 1s;
-}
+// .project-list li:nth-of-type(even) {
+//     transform: translateX(50em);
+//     transition: transform 1s;
+// }
 
 .img-container img {
     height: 400px;

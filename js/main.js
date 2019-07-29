@@ -26,8 +26,8 @@ document.addEventListener('DOMContentLoaded', ()=> {
         navBar.toggleClass("nav-show", scrolling);
         navLinks.toggleClass("nav-link-invert", scrolling);
 
-        if (transOdds) oddProj.css({ "transform": "translateX(0em)" })
-        if (transEvens) evenProj.css({ "transform": "translateX(0em)" })
+        // if (transOdds) oddProj.css({ "transform": "translateX(0em)" })
+        // if (transEvens) evenProj.css({ "transform": "translateX(0em)" })
     };
 
     /////// END Arrow flip animation END ////////
