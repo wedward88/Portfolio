@@ -14,20 +14,20 @@ document.addEventListener('DOMContentLoaded', ()=> {
         let navBar = $('#nav-bar');
         let navLinks = $('.nav-links');
 
-        let oddProj = $('.project-list li:nth-of-type(odd)')
-        let evenProj = $('.project-list li:nth-of-type(even)')
+        let oddProj = $('.odd-items')
+        let evenProj = $('.even-items')
         
         let scrolling = currScrollTop > 0;
         let arrowUp = currScrollMid > arrow.offset().top;
-        let transEvens = currScrollMid > evenProj.offset().top - 50;
-        let transOdds = currScrollMid > oddProj.offset().top - 50;
+        let transEvens = currScrollMid > evenProj.offset().top ;
+        let transOdds = currScrollMid > oddProj.offset().top ;
 
         arrow.toggleClass("flipped", arrowUp);
         navBar.toggleClass("nav-show", scrolling);
         navLinks.toggleClass("nav-link-invert", scrolling);
 
-        // if (transOdds) oddProj.css({ "transform": "translateX(0em)" })
-        // if (transEvens) evenProj.css({ "transform": "translateX(0em)" })
+        if (transOdds) oddProj.css({ "transform": "translateX(0em)" })
+        if (transEvens) evenProj.css({ "transform": "translateX(0em)" })
     };
 
     /////// END Arrow flip animation END ////////
