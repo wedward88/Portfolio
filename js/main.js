@@ -19,15 +19,15 @@ document.addEventListener('DOMContentLoaded', ()=> {
         
         let scrolling = currScrollTop > 0;
         let arrowUp = currScrollMid > arrow.offset().top;
-        let transEvens = currScrollMid > evenProj.offset().top ;
-        let transOdds = currScrollMid > oddProj.offset().top ;
+        let transEvens = currScrollMid > evenProj.offset().top - 100 ;
+        let transOdds = currScrollMid > oddProj.offset().top - 100 ;
 
         arrow.toggleClass("flipped", arrowUp);
         navBar.toggleClass("nav-show", scrolling);
         navLinks.toggleClass("nav-link-invert", scrolling);
 
-        if (transOdds) oddProj.css({ "transform": "translateX(0em)" })
-        if (transEvens) evenProj.css({ "transform": "translateX(0em)" })
+        if (transOdds) oddProj.css({ "transform": "translateX(0em)", "opacity": "100" })
+        if (transEvens) evenProj.css({ "transform": "translateX(0em)", "opacity": "100" })
     };
 
     /////// END Arrow flip animation END ////////

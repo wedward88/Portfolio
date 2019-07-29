@@ -328,14 +328,16 @@ nav {
 
 .odd-items {
     // display: none;
-    transform: translateX(-100em);
-    transition: transform 1s;
+    transform: translateX(-100vw);
+    opacity: 0;
+    transition: transform 1s, opacity 2s;
 }
 
 .even-items {
     // display: none;
-    transform: translateX(100em);
-    transition: transform 1s;
+    transform: translateX(100vw);
+    opacity: 0;
+    transition: transform 1s, opacity 2s;
 }
 
 .img-container img {
