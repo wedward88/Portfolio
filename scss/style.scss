@@ -235,11 +235,11 @@ nav {
 
 .flipped {
     transform: rotate(180deg);
-    transition: transform .5s;
+    transition: transform 1s;
 }
 
 .un-flipped {
-    transition: transform .5s;
+    transition: transform 1s;
 }
 
 .down-icon .iconify {
