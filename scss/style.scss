@@ -273,7 +273,7 @@ nav {
     font-weight: lighter;
 }
 
-.project-work > ul {
+.project-list {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -283,9 +283,9 @@ nav {
     margin-bottom: 150px;
 }
 
-.project-list {
-    height: 100%;
-}
+// .project-list {
+//     height: 100%;
+// }
 
 // .project-list li {
 //     width: 100%;
@@ -325,6 +325,16 @@ nav {
     font-weight: lighter;
     padding-top: 20px;
     text-align: center;
+}
+
+.project-list li:nth-of-type(odd) {
+    transform: translateX(-50em);
+    transition: transform 1s;
+}
+
+.project-list li:nth-of-type(even) {
+    transform: translateX(50em);
+    transition: transform 1s;
 }
 
 .img-container img {

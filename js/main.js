@@ -13,12 +13,21 @@ document.addEventListener('DOMContentLoaded', ()=> {
         let arrow = $(".down-icon .iconify");
         let navBar = $('#nav-bar');
         let navLinks = $('.nav-links');
+
+        let oddProj = $('.project-list li:nth-of-type(odd)')
+        let evenProj = $('.project-list li:nth-of-type(even)')
         
         let scrolling = currScrollTop > 0;
         let arrowUp = currScrollMid > arrow.offset().top;
+        let transEvens = currScrollMid > evenProj.offset().top - 50;
+        let transOdds = currScrollMid > oddProj.offset().top - 50;
+
         arrow.toggleClass("flipped", arrowUp);
         navBar.toggleClass("nav-show", scrolling);
         navLinks.toggleClass("nav-link-invert", scrolling);
+
+        if (transOdds) oddProj.css({ "transform": "translateX(0em)" })
+        if (transEvens) evenProj.css({ "transform": "translateX(0em)" })
     };
 
     /////// END Arrow flip animation END ////////
