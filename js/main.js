@@ -4,7 +4,15 @@ import '../scss/style.scss'
 
 document.addEventListener('DOMContentLoaded', ()=> {
 
-    ///////// Arrow flip animation ////////////
+    setTimeout(() => {
+        $(".hello").removeClass("welcome-hidden")
+    }, 500)
+
+    setTimeout(() => {
+        $(".welcome-message").removeClass("welcome-hidden")
+    }, 2000)
+
+    ///////// Scroll Animations ////////////
     
     window.onscroll = () => {
         let currScrollTop = $(window).scrollTop();
@@ -25,6 +33,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
         arrow.toggleClass("flipped", arrowUp);
         navBar.toggleClass("nav-show", scrolling);
         navLinks.toggleClass("nav-link-invert", scrolling);
+
 
         if (transOdds) oddProj.css({ "transform": "translateX(0em)", "opacity": "100" })
         if (transEvens) evenProj.css({ "transform": "translateX(0em)", "opacity": "100" })
