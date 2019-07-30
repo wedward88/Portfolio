@@ -16,8 +16,14 @@ html {
     
 }
 
-#about, #projects, #skills, #contact  {
+#about, #projects, #contact  {
+    padding-top: 37.5px;
+    padding-bottom: 37.5px;
+}
+
+#skills {
     padding-top: 75px;
+    padding-bottom: 37.5px;
 }
 // SVG Image background provided by SVGBackgrounds.com.
 body {
@@ -177,9 +183,6 @@ nav {
 }
 
 
-
-
-
 .skills {
     display: flex;
     flex-direction: column;
@@ -254,7 +257,7 @@ nav {
     justify-content: space-around;
     width: 100%;
     height: 800px;
-    background-color: #26262b;
+    // background-color: #26262b;
     overflow-x: hidden;
 }
 
