@@ -303,14 +303,6 @@ nav {
     margin-bottom: 150px;
 }
 
-// .project-list {
-//     height: 100%;
-// }
-
-// .project-list li {
-//     width: 100%;
-// }
-
 .project-container {
     overflow: hidden;
     border-radius: 10px;
@@ -401,7 +393,7 @@ nav {
 
 .footer {
     grid-area: footer;
-    height: 500px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -411,7 +403,9 @@ nav {
     box-sizing: border-box;
 }
 
-.footer p {
+
+
+.footer > p {
     font-size: 40px;
     font-weight: lighter;
     line-height: 66px;
@@ -429,6 +423,19 @@ nav {
 .footer > p > span > a {
     text-decoration: none;
     color: $color-baby-blue;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-details p {
+    margin: 15px 0px;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 30px;
 }
 
 .social-links {
@@ -467,30 +474,14 @@ nav {
 
     
 }
-// @media only screen and (min-width: 601px) and (max-width: 940px) {
-//     .welcome-container {
-//         margin-left: -200px;
-//     }
 
-//     .project-work {
-//         height: 100%;
-//     }
-
-//     .project-work header {
-//         margin-bottom: 25px;
-//     }
-
-//     .project-work > ul {
-//         grid-template-columns: repeat(auto-fit, minmax(49em, 1fr));
-//         grid-gap: 3em;
-//         height: 100%;
-//         margin-bottom: 50px;
-//     }
-
-    
-// }
 
 @media only screen and (max-width: 600px) {
+
+    #about, #projects, #skills {
+    padding-top: 80px;
+    padding-bottom: 37.5px;
+    }
     .profile-pic-container {
         display: flex;
         width: 100%;
@@ -498,13 +489,10 @@ nav {
         
     }
 
-    // #about, #projects, #skills, #contact {
-    //     padding-top: 115px;
-    // }
     .nav-links {
         display: flex;
         justify-content: space-around;
-        width: 70%;
+        width: 90%;
     }
 
     body {
@@ -582,10 +570,14 @@ nav {
         justify-content: space-between;
     }
 
-    .footer p {
+    .footer > p {
         font-size: 27px;
         line-height: 38px;
         text-align: center;
         margin-top: 0px;
+    }
+
+    .contact-details p {
+        font-size: 18px;
     }
 }
