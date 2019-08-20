@@ -13,6 +13,11 @@ document.addEventListener('DOMContentLoaded', ()=> {
     }, 2000)
 
     ///////// Scroll Animations ////////////
+    // let navItems = $('.nav-links li a');
+    // let sections = {};
+    // Object.values($('.section-head')).forEach(section => sections[$(section).height()] = section )
+    // console.log($(sections));
+
     
     window.onscroll = () => {
         let currScrollTop = $(window).scrollTop();
@@ -29,6 +34,8 @@ document.addEventListener('DOMContentLoaded', ()=> {
         let arrowUp = currScrollMid > arrow.offset().top;
         let transEvens = currScrollMid > evenProj.offset().top - 100 ;
         let transOdds = currScrollMid > oddProj.offset().top - 100 ;
+
+        
 
         arrow.toggleClass("flipped", arrowUp);
         navBar.toggleClass("nav-show", scrolling);
